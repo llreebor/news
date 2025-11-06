@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* Variables */
+@theme {
+	/* Container */
+	--container-width: 1192px;
+	--container-side-padding: 16px;
+	--container-max-width: calc(
+		var(--container-width) + (2 * var(--container-side-padding))
+	);
+
+	/* Fonts */
+	--font-verdana: "Verdana", sans-serif;
+
+	/* Colors */
+	--color-primary: oklch(20.4% 0.02 280.02);
+	--color-error: oklch(63.7% 0.237 25.331);
+	--color-success: oklch(72.3% 0.219 149.579);
+	--color-warning: oklch(70.5% 0.213 47.604);
+
+	/* Animations */
+	--animate-fadeIn: fadeIn 0.3s linear;
+
+	/* Breakpoint */
+	--breakpoint-mobile: 1200px;
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+}
+
+/* Container max-width & paddings */
+@utility container {
+	@apply mx-auto max-w-(--container-max-width) px-(--container-side-padding);
+}
+
+/* Base Elements  */
+@layer base {
+	body {
+		@apply font-verdana;
+	}
+	a {
+		@apply transition-colors;
+	}
+	button {
+		@apply cursor-pointer;
+	}
+	p {
+		@apply text-black;
+	}
+}
+
+/* Custom Components */
+@layer components {
+	/* Button */
+	.btn {
+		@apply inline-flex items-center gap-3 rounded-lg border border-transparent px-3 py-2 transition-colors disabled:cursor-not-allowed disabled:opacity-85;
+	}
+	.btn-primary {
+		@apply bg-primary not-disabled:hover:bg-primary/90 not-disabled:active:bg-primary/80 text-white;
+	}
+
+	/* Menu */
+	.mobile-menu-link {
+		@apply flex items-center gap-3 py-3 text-xl text-black hover:text-current;
+	}
+	.mobile-submenu-link {
+		@apply flex px-4 py-2 text-lg hover:text-black;
+	}
+}
+
+/* Utility Classes */
+@layer utilities {
+	/* Image Background */
+	.with-image-bg {
+		@apply relative z-0;
+	}
+	.image-bg {
+		@apply absolute inset-0 -z-10 h-auto w-full max-w-full object-cover;
+	}
+}

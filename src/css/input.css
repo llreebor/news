@@ -72,6 +72,12 @@
 	.mobile-submenu-link {
 		@apply flex px-4 py-2 text-lg hover:text-black;
 	}
+	.submenu {
+		@apply bg-white;
+	}
+	.submenu-trigger {
+		@apply shrink-0;
+	}
 }
 
 /* Utility Classes */
@@ -83,4 +89,7 @@
 	.image-bg {
 		@apply absolute inset-0 -z-10 h-auto w-full max-w-full object-cover;
 	}
+}
+@utility no-scrollbar {
+	@apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
 }

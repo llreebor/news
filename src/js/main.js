@@ -99,5 +99,30 @@ function initializeMobileMenu() {
 // Inits
 document.addEventListener("DOMContentLoaded", () => {
 	// Mobile Menu
-	initializeMobileMenu()
+	// initializeMobileMenu()
+})
+
+// Swiper Photos
+new Swiper(".swiper-photos", {
+	loop: true,
+	spaceBetween: 20,
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next-photos",
+		prevEl: ".swiper-button-prev-photos",
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		640: {
+			slidesPerView: 2,
+		},
+		992: {
+			slidesPerView: 3,
+		},
+		1200: {
+			slidesPerView: 4,
+		},
+	},
 })

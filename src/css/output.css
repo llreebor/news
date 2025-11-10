@@ -920,6 +920,10 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-b-\[5px\] {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 5px;
+  }
   .border-dashed {
     --tw-border-style: dashed;
     border-style: dashed;
@@ -1004,6 +1008,9 @@
   }
   .border-r-gray-200 {
     border-right-color: var(--color-gray-200);
+  }
+  .border-b-\[\#f1f1f1\] {
+    border-bottom-color: #f1f1f1;
   }
   .border-b-\[1px_solid_rgba\(180_180_180_\.5\)\] {
     border-bottom-color: 1px solid rgba(180 180 180 .5);
@@ -2084,6 +2091,11 @@
   .lg\:max-w-\[480px\] {
     @media (width >= 64rem) {
       max-width: 480px;
+    }
+  }
+  .lg\:grid-cols-2 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .lg\:grid-cols-5 {

@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	// initializeMobileMenu()
 })
 
-// Swiper Photos
+// Sliders
 new Swiper(".swiper-photos", {
 	loop: true,
 	spaceBetween: 20,
@@ -113,13 +113,36 @@ new Swiper(".swiper-photos", {
 	},
 	breakpoints: {
 		320: {
-			slidesPerView: 1,
+			slidesPerView: 1.2,
 		},
 		640: {
-			slidesPerView: 2,
+			slidesPerView: 2.3,
 		},
 		992: {
-			slidesPerView: 3,
+			slidesPerView: 3.3,
+		},
+		1200: {
+			slidesPerView: 4,
+		},
+	},
+})
+new Swiper(".swiper-sport", {
+	loop: true,
+	spaceBetween: 20,
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next-photos",
+		prevEl: ".swiper-button-prev-photos",
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1.2,
+		},
+		640: {
+			slidesPerView: 2.3,
+		},
+		992: {
+			slidesPerView: 3.3,
 		},
 		1200: {
 			slidesPerView: 4,

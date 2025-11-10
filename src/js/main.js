@@ -126,13 +126,59 @@ new Swiper(".swiper-photos", {
 		},
 	},
 })
-new Swiper(".swiper-sport", {
+new Swiper(".swiper-sports", {
 	loop: true,
 	spaceBetween: 20,
 	// Navigation arrows
 	navigation: {
-		nextEl: ".swiper-button-next-photos",
-		prevEl: ".swiper-button-prev-photos",
+		nextEl: ".swiper-button-next-sports",
+		prevEl: ".swiper-button-prev-sports",
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1.2,
+		},
+		640: {
+			slidesPerView: 2.3,
+		},
+		992: {
+			slidesPerView: 3.3,
+		},
+		1200: {
+			slidesPerView: 4,
+		},
+	},
+})
+new Swiper(".swiper-entertainment", {
+	loop: true,
+	spaceBetween: 20,
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next-entertainment",
+		prevEl: ".swiper-button-prev-entertainment",
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1.2,
+		},
+		640: {
+			slidesPerView: 2.3,
+		},
+		992: {
+			slidesPerView: 3.3,
+		},
+		1200: {
+			slidesPerView: 4,
+		},
+	},
+})
+new Swiper(".swiper-lifestyle", {
+	loop: true,
+	spaceBetween: 20,
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next-lifestyle",
+		prevEl: ".swiper-button-prev-lifestyle",
 	},
 	breakpoints: {
 		320: {

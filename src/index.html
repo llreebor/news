@@ -38,7 +38,11 @@
 							<div
 								class="flex items-center gap-3 border-b border-b-gray-200 py-2"
 							>
-								<span>LOGO IMG</span>
+								<img
+									class="w-20"
+									src="./images/home/zoom-pink.png"
+									alt="image"
+								/>
 								<a href="#">
 									<h2
 										class="flex items-center text-xl font-bold text-[#e70437]"
@@ -75,9 +79,11 @@
 						</div>
 
 						<!-- Content -->
-						<div class="grid gap-5 lg:grid-cols-2">
-							<div class="mt-5 grid gap-4 pb-5 md:grid-cols-2">
-								<ul class="border-b border-dashed border-b-gray-200">
+						<div class="mt-5 flex flex-col gap-5 lg:flex-row lg:gap-10">
+							<div class="grid gap-4 pb-5 md:grid-cols-2">
+								<ul
+									class="border-b border-dashed border-b-gray-200 lg:max-w-[300px]"
+								>
 									<li
 										class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
 									>
@@ -132,7 +138,9 @@
 										</a>
 									</li>
 								</ul>
-								<ul class="border-b border-dashed border-b-gray-200">
+								<ul
+									class="border-b border-dashed border-b-gray-200 lg:max-w-[300px]"
+								>
 									<li
 										class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
 									>
@@ -226,7 +234,7 @@
 									</li>
 								</ul>
 							</div>
-							<div class="p-5">
+							<div class="lg:max-w-[450px]">
 								<img
 									class="h-auto w-full max-w-full"
 									src="./images/home/slider-image.png"
@@ -235,72 +243,97 @@
 							</div>
 						</div>
 
-						<div class="grid w-full grid-cols-5 gap-3 pb-3 last:pb-0">
-							<a href="#" class="group flex w-full shrink-0 flex-col gap-3">
-								<div class="overflow-hidden rounded-lg">
-									<img
-										class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
-										src="./images/global/image.webp"
-										alt="image"
-									/>
-								</div>
-								<p class="line-clamp-3 text-sm leading-normal">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-									consectetur.
-								</p>
-							</a>
-							<a href="#" class="group flex w-full shrink-0 flex-col gap-3">
-								<div class="overflow-hidden rounded-lg">
-									<img
-										class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
-										src="./images/global/image.webp"
-										alt="image"
-									/>
-								</div>
-								<p class="line-clamp-3 text-sm leading-normal">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-									consectetur.
-								</p>
-							</a>
-							<a href="#" class="group flex w-full shrink-0 flex-col gap-3">
-								<div class="overflow-hidden rounded-lg">
-									<img
-										class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
-										src="./images/global/image.webp"
-										alt="image"
-									/>
-								</div>
-								<p class="line-clamp-3 text-sm leading-normal">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-									consectetur.
-								</p>
-							</a>
-							<a href="#" class="group flex w-full shrink-0 flex-col gap-3">
-								<div class="overflow-hidden rounded-lg">
-									<img
-										class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
-										src="./images/global/image.webp"
-										alt="image"
-									/>
-								</div>
-								<p class="line-clamp-3 text-sm leading-normal">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-									consectetur.
-								</p>
-							</a>
-							<a href="#" class="group flex w-full shrink-0 flex-col gap-3">
-								<div class="overflow-hidden rounded-lg">
-									<img
-										class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
-										src="./images/global/image.webp"
-										alt="image"
-									/>
-								</div>
-								<p class="line-clamp-3 text-sm leading-normal">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-									consectetur.
-								</p>
-							</a>
+						<div class="swiper swiper-lifestyle mt-5">
+							<div class="swiper-wrapper">
+								<a
+									href="#"
+									class="swiper-slide group flex w-full shrink-0 flex-col gap-3"
+								>
+									<div class="overflow-hidden rounded-lg">
+										<img
+											class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+											src="./images/global/image.webp"
+											alt="image"
+										/>
+									</div>
+									<p class="line-clamp-3 text-sm leading-normal">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Vel, consectetur.
+									</p>
+								</a>
+								<a
+									href="#"
+									class="swiper-slide group flex w-full shrink-0 flex-col gap-3"
+								>
+									<div class="overflow-hidden rounded-lg">
+										<img
+											class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+											src="./images/global/image.webp"
+											alt="image"
+										/>
+									</div>
+									<p class="line-clamp-3 text-sm leading-normal">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Vel, consectetur.
+									</p>
+								</a>
+								<a
+									href="#"
+									class="swiper-slide group flex w-full shrink-0 flex-col gap-3"
+								>
+									<div class="overflow-hidden rounded-lg">
+										<img
+											class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+											src="./images/global/image.webp"
+											alt="image"
+										/>
+									</div>
+									<p class="line-clamp-3 text-sm leading-normal">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Vel, consectetur.
+									</p>
+								</a>
+								<a
+									href="#"
+									class="swiper-slide group flex w-full shrink-0 flex-col gap-3"
+								>
+									<div class="overflow-hidden rounded-lg">
+										<img
+											class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+											src="./images/global/image.webp"
+											alt="image"
+										/>
+									</div>
+									<p class="line-clamp-3 text-sm leading-normal">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Vel, consectetur.
+									</p>
+								</a>
+								<a
+									href="#"
+									class="swiper-slide group flex w-full shrink-0 flex-col gap-3"
+								>
+									<div class="overflow-hidden rounded-lg">
+										<img
+											class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+											src="./images/global/image.webp"
+											alt="image"
+										/>
+									</div>
+									<p class="line-clamp-3 text-sm leading-normal">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Vel, consectetur.
+									</p>
+								</a>
+							</div>
+
+							<!-- If we need navigation buttons -->
+							<div
+								class="swiper-button-prev swiper-button-prev-lifestyle rounded-full bg-black/60 p-3 text-white!"
+							></div>
+							<div
+								class="swiper-button-next swiper-button-next-lifestyle rounded-full bg-black/60 p-3 text-white!"
+							></div>
 						</div>
 					</div>
 				</section>
@@ -596,7 +629,7 @@
 						</div>
 
 						<!-- Slider -->
-						<div class="swiper swiper-sport mt-5">
+						<div class="swiper swiper-sports mt-5">
 							<div class="swiper-wrapper">
 								<a
 									href="#"
@@ -682,10 +715,328 @@
 
 							<!-- If we need navigation buttons -->
 							<div
-								class="swiper-button-prev swiper-button-prev-photos rounded-full bg-black/60 p-3 text-white!"
+								class="swiper-button-prev swiper-button-prev-sports rounded-full bg-black/60 p-3 text-white!"
 							></div>
 							<div
-								class="swiper-button-next swiper-button-next-photos rounded-full bg-black/60 p-3 text-white!"
+								class="swiper-button-next swiper-button-next-sports rounded-full bg-black/60 p-3 text-white!"
+							></div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Entertainment -->
+				<section class="bg-[#1b1d29] py-5">
+					<div class="container max-w-[1152px]">
+						<!-- Page Header -->
+						<div class="flex flex-col">
+							<div
+								class="flex items-center gap-3 border-b border-b-[1px_solid_rgba(180_180_180_.5)] py-2"
+							>
+								<img
+									class="w-20"
+									src="./images/home/zoom-dark.png"
+									alt="image"
+								/>
+								<a href="#">
+									<h2
+										class="flex items-center text-xl font-bold text-[#e70437]"
+									>
+										Entertainment
+										<svg
+											width="30"
+											height="24"
+											viewBox="0 0 30 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M16 17L21 12L16 7"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+											<path
+												d="M10 17L15 12L10 7"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</h2>
+								</a>
+							</div>
+							<div
+								class="relative h-px w-full bg-gray-200 after:absolute after:-top-0.5 after:left-0 after:h-1 after:w-10 after:bg-[#e70437]"
+							></div>
+						</div>
+
+						<!-- Content -->
+						<div class="mt-5 flex flex-col gap-5 lg:flex-row lg:gap-10">
+							<div class="grid gap-4 pb-5 md:grid-cols-2">
+								<ul
+									class="border-b border-dashed border-b-gray-200 lg:max-w-[300px]"
+								>
+									<li
+										class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+									>
+										<a href="#" class="flex flex-col">
+											<img src="./images/global/image-23.webp" alt="image" />
+
+											<p class="-mt-5 line-clamp-3 font-bold text-white">
+												<span class="bg-[#e70437] box-decoration-clone px-4">
+													When 17-Year-Old Sachin Tendulkar Fell For Anjali —
+													The Love Story That Bowled Over The God Of Cricket
+												</span>
+											</p>
+										</a>
+									</li>
+									<li
+										class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+									>
+										<a
+											href="#"
+											class="line-clamp-2 flex flex-col text-sm text-white"
+										>
+											<p class="line-clamp-2 text-white">
+												Top 10 Alcohol-Drinking Countries in 2025 — Russia
+												Leads, India’s Rank Surprises
+											</p>
+										</a>
+									</li>
+									<li
+										class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+									>
+										<a
+											href="#"
+											class="line-clamp-2 flex flex-col text-sm text-white"
+										>
+											<p class="line-clamp-2 text-white">
+												Top 10 Alcohol-Drinking Countries in 2025 — Russia
+												Leads, India’s Rank Surprises
+											</p>
+										</a>
+									</li>
+									<li
+										class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+									>
+										<a
+											href="#"
+											class="line-clamp-2 flex flex-col text-sm text-white"
+										>
+											<p class="line-clamp-2 text-white">
+												Top 10 Alcohol-Drinking Countries in 2025 — Russia
+												Leads, India’s Rank Surprises
+											</p>
+										</a>
+									</li>
+								</ul>
+								<ul
+									class="border-b border-dashed border-b-gray-200 lg:max-w-[300px]"
+								>
+									<li
+										class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+									>
+										<a
+											href="#"
+											class="line-clamp-2 flex flex-col text-sm text-white"
+										>
+											<p class="line-clamp-2 text-white">
+												Top 10 Alcohol-Drinking Countries in 2025 — Russia
+												Leads, India’s Rank Surprises
+											</p>
+										</a>
+									</li>
+									<li
+										class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+									>
+										<a
+											href="#"
+											class="line-clamp-2 flex flex-col text-sm text-white"
+										>
+											<p class="line-clamp-2 text-white">
+												Top 10 Alcohol-Drinking Countries in 2025 — Russia
+												Leads, India’s Rank Surprises
+											</p>
+										</a>
+									</li>
+									<li
+										class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+									>
+										<a
+											href="#"
+											class="line-clamp-2 flex flex-col text-sm text-white"
+										>
+											<p class="line-clamp-2 text-white">
+												Top 10 Alcohol-Drinking Countries in 2025 — Russia
+												Leads, India’s Rank Surprises
+											</p>
+										</a>
+									</li>
+									<li
+										class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+									>
+										<a
+											href="#"
+											class="line-clamp-2 flex flex-col text-sm text-white"
+										>
+											<p class="line-clamp-2 text-white">
+												Top 10 Alcohol-Drinking Countries in 2025 — Russia
+												Leads, India’s Rank Surprises
+											</p>
+										</a>
+									</li>
+									<li
+										class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+									>
+										<a
+											href="#"
+											class="line-clamp-2 flex flex-col text-sm text-white"
+										>
+											<p class="line-clamp-2 text-white">
+												Top 10 Alcohol-Drinking Countries in 2025 — Russia
+												Leads, India’s Rank Surprises
+											</p>
+										</a>
+									</li>
+									<li
+										class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+									>
+										<a
+											href="#"
+											class="line-clamp-2 flex flex-col text-sm text-white"
+										>
+											<p class="line-clamp-2 text-white">
+												Top 10 Alcohol-Drinking Countries in 2025 — Russia
+												Leads, India’s Rank Surprises
+											</p>
+										</a>
+									</li>
+									<li
+										class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+									>
+										<a
+											href="#"
+											class="line-clamp-2 flex flex-col text-sm text-white"
+										>
+											<p class="line-clamp-2 text-white">
+												Top 10 Alcohol-Drinking Countries in 2025 — Russia
+												Leads, India’s Rank Surprises
+											</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="lg:max-w-[450px]">
+								<img
+									class="h-auto w-full max-w-full"
+									src="./images/home/slider-image.png"
+									alt="slider image"
+								/>
+							</div>
+						</div>
+
+						<div class="swiper swiper-entertainment mt-5">
+							<div class="swiper-wrapper">
+								<a
+									href="#"
+									class="swiper-slide group flex w-full shrink-0 flex-col gap-3"
+								>
+									<div
+										class="overflow-hidden rounded-lg border-[0.5px] border-[rgb(180_180_180)]/50"
+									>
+										<img
+											class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+											src="./images/global/image.webp"
+											alt="image"
+										/>
+									</div>
+									<p class="line-clamp-3 text-sm leading-normal text-white">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Vel, consectetur.
+									</p>
+								</a>
+								<a
+									href="#"
+									class="swiper-slide group flex w-full shrink-0 flex-col gap-3"
+								>
+									<div
+										class="overflow-hidden rounded-lg border-[0.5px] border-[rgb(180_180_180)]/50"
+									>
+										<img
+											class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+											src="./images/global/image.webp"
+											alt="image"
+										/>
+									</div>
+									<p class="line-clamp-3 text-sm leading-normal text-white">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Vel, consectetur.
+									</p>
+								</a>
+								<a
+									href="#"
+									class="swiper-slide group flex w-full shrink-0 flex-col gap-3"
+								>
+									<div
+										class="overflow-hidden rounded-lg border-[0.5px] border-[rgb(180_180_180)]/50"
+									>
+										<img
+											class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+											src="./images/global/image.webp"
+											alt="image"
+										/>
+									</div>
+									<p class="line-clamp-3 text-sm leading-normal text-white">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Vel, consectetur.
+									</p>
+								</a>
+								<a
+									href="#"
+									class="swiper-slide group flex w-full shrink-0 flex-col gap-3"
+								>
+									<div
+										class="overflow-hidden rounded-lg border-[0.5px] border-[rgb(180_180_180)]/50"
+									>
+										<img
+											class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+											src="./images/global/image.webp"
+											alt="image"
+										/>
+									</div>
+									<p class="line-clamp-3 text-sm leading-normal text-white">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Vel, consectetur.
+									</p>
+								</a>
+								<a
+									href="#"
+									class="swiper-slide group flex w-full shrink-0 flex-col gap-3"
+								>
+									<div
+										class="overflow-hidden rounded-lg border-[0.5px] border-[rgb(180_180_180)]/50"
+									>
+										<img
+											class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+											src="./images/global/image.webp"
+											alt="image"
+										/>
+									</div>
+									<p class="line-clamp-3 text-sm leading-normal text-white">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Vel, consectetur.
+									</p>
+								</a>
+							</div>
+
+							<!-- If we need navigation buttons -->
+							<div
+								class="swiper-button-prev swiper-button-prev-entertainment rounded-full bg-black/60 p-3 text-white!"
+							></div>
+							<div
+								class="swiper-button-next swiper-button-next-entertainment rounded-full bg-black/60 p-3 text-white!"
 							></div>
 						</div>
 					</div>

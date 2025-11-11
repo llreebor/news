@@ -89,6 +89,9 @@
 	.image-bg {
 		@apply absolute inset-0 -z-10 h-full w-full max-w-full object-cover;
 	}
+	.swiper-button-disabled {
+		@apply cursor-not-allowed! opacity-50!;
+	}
 }
 @utility no-scrollbar {
 	@apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;

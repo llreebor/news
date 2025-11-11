@@ -103,6 +103,40 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 // Sliders
+// Lifestyle
+new Swiper(".swiper-lifestyle", {
+	loop: true,
+	spaceBetween: 20,
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next-lifestyle",
+		prevEl: ".swiper-button-prev-lifestyle",
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1.2,
+		},
+		640: {
+			slidesPerView: 2.3,
+		},
+		992: {
+			slidesPerView: 3.3,
+		},
+		1200: {
+			slidesPerView: 4,
+		},
+	},
+})
+new Swiper(".swiper-lifestyle-big", {
+	// spaceBetween: 20,
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next-lifestyle-big",
+		prevEl: ".swiper-button-prev-lifestyle-big",
+	},
+})
+
+// Photos
 new Swiper(".swiper-photos", {
 	loop: true,
 	spaceBetween: 20,
@@ -126,6 +160,8 @@ new Swiper(".swiper-photos", {
 		},
 	},
 })
+
+// Sports
 new Swiper(".swiper-sports", {
 	loop: true,
 	spaceBetween: 20,
@@ -149,6 +185,17 @@ new Swiper(".swiper-sports", {
 		},
 	},
 })
+new Swiper(".swiper-sports-nav", {
+	spaceBetween: 20,
+	slidesPerView: 8,
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next-sports-nav",
+		prevEl: ".swiper-button-prev-sports-nav",
+	},
+})
+
+// Entertainment
 new Swiper(".swiper-entertainment", {
 	loop: true,
 	spaceBetween: 20,
@@ -172,26 +219,44 @@ new Swiper(".swiper-entertainment", {
 		},
 	},
 })
-new Swiper(".swiper-lifestyle", {
-	loop: true,
-	spaceBetween: 20,
+new Swiper(".swiper-entertainment-big", {
+	// spaceBetween: 20,
 	// Navigation arrows
 	navigation: {
-		nextEl: ".swiper-button-next-lifestyle",
-		prevEl: ".swiper-button-prev-lifestyle",
+		nextEl: ".swiper-button-next-entertainment-big",
+		prevEl: ".swiper-button-prev-entertainment-big",
 	},
-	breakpoints: {
-		320: {
-			slidesPerView: 1.2,
-		},
-		640: {
-			slidesPerView: 2.3,
-		},
-		992: {
-			slidesPerView: 3.3,
-		},
-		1200: {
-			slidesPerView: 4,
-		},
+})
+
+// India
+new Swiper(".swiper-india-nav", {
+	spaceBetween: 20,
+	slidesPerView: 8,
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next-india-nav",
+		prevEl: ".swiper-button-prev-india-nav",
+	},
+})
+
+// Tech & Gadgets
+new Swiper(".swiper-tech-nav", {
+	spaceBetween: 20,
+	slidesPerView: 8,
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next-tech-nav",
+		prevEl: ".swiper-button-prev-tech-nav",
+	},
+})
+
+// Bussiness
+new Swiper(".swiper-bussiness-nav", {
+	spaceBetween: 20,
+	slidesPerView: 8,
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next-bussiness-nav",
+		prevEl: ".swiper-button-prev-bussiness-nav",
 	},
 })

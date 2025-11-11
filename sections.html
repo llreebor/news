@@ -1,3 +1,4 @@
+<!-- DONE -->
 <!-- Lifestyle -->
 <section class="py-5">
 	<div class="container max-w-[1152px]">
@@ -161,11 +162,36 @@
 				</ul>
 			</div>
 			<div class="lg:max-w-[450px]">
-				<img
-					class="h-auto w-full max-w-full"
-					src="./images/home/slider-image.png"
-					alt="slider image"
-				/>
+				<div class="swiper swiper-lifestyle-big mt-5 h-full lg:mt-0">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide h-auto!">
+							<a href="#" class="group flex h-full">
+								<img
+									class="h-full w-full max-w-full object-cover transition-transform group-hover:scale-110"
+									src="./images/home/big-slider.webp"
+									alt="slider image"
+								/>
+							</a>
+						</div>
+						<div class="swiper-slide h-auto!">
+							<a href="#" class="group flex h-full">
+								<img
+									class="h-full w-full max-w-full object-cover transition-transform group-hover:scale-110"
+									src="./images/home/big-slider.webp"
+									alt="slider image"
+								/>
+							</a>
+						</div>
+					</div>
+
+					<!-- If we need navigation buttons -->
+					<div
+						class="swiper-button-prev swiper-button-prev-sports-nav z-10! rounded-full bg-[#e70437] p-3 text-white!"
+					></div>
+					<div
+						class="swiper-button-next swiper-button-next-sports-nav z-10! rounded-full bg-[#e70437] p-3 text-white!"
+					></div>
+				</div>
 			</div>
 		</div>
 
@@ -449,9 +475,11 @@
 <section class="bg-[#002865] py-5">
 	<div class="container max-w-[1152px]">
 		<!-- Page Header -->
-		<div class="flex flex-col">
-			<div class="flex items-center gap-3 border-b border-b-gray-200 py-2">
-				<a href="#">
+		<div class="flex flex-col overflow-hidden">
+			<div
+				class="flex w-full items-center justify-between gap-3 border-b border-b-gray-200 py-2"
+			>
+				<a href="#" class="flex-1">
 					<h2 class="flex items-center text-xl font-bold text-white">
 						Sports
 						<svg
@@ -478,10 +506,191 @@
 						</svg>
 					</h2>
 				</a>
+
+				<!-- Nav Slider -->
+				<div class="hidden items-center min-[1200px]:flex">
+					<div class="swiper swiper-sports-nav ml-auto! w-[800px]">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-white">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-white">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-white">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-white">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-white">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-white">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-white">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-white">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-white">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-white">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-white">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-white">
+									Basketball
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="flex items-center gap-2">
+						<!-- If we need navigation buttons -->
+						<button
+							class="swiper-button-prev-sports-nav flex size-5 items-center justify-center rounded-full bg-black/80"
+						>
+							<svg
+								class="size-4"
+								width="10"
+								height="20"
+								viewBox="0 0 10 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M1.53572 9.4073L6.24989 4.69314L7.42822 5.87147L3.30322 9.99647L7.42822 14.1215L6.24989 15.2998L1.53572 10.5856C1.3795 10.4294 1.29173 10.2174 1.29173 9.99647C1.29173 9.7755 1.3795 9.56358 1.53572 9.4073Z"
+									fill="white"
+								/>
+							</svg>
+						</button>
+						<button
+							class="swiper-button-next-sports-nav flex size-5 items-center justify-center rounded-full bg-black/80"
+						>
+							<svg
+								class="size-4"
+								width="10"
+								height="20"
+								viewBox="0 0 10 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M8.46428 10.5927L3.75011 15.3069L2.57178 14.1285L6.69678 10.0035L2.57178 5.87853L3.75011 4.7002L8.46428 9.41436C8.6205 9.57064 8.70827 9.78256 8.70827 10.0035C8.70827 10.2245 8.6205 10.4364 8.46428 10.5927Z"
+									fill="white"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
 			</div>
 			<div
 				class="relative h-px w-full bg-gray-200 after:absolute after:-top-0.5 after:left-0 after:h-1 after:w-10 after:bg-white"
 			></div>
+
+			<div
+				class="mb-5 flex w-[1200px] items-center gap-5 overflow-auto min-[1200px]:hidden"
+			>
+				<div
+					class="no-scrollbar flex min-w-[1200px] flex-nowrap gap-5 py-3 whitespace-nowrap"
+				>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-white">
+						Basketball
+					</a>
+				</div>
+			</div>
 		</div>
 
 		<!-- Content -->
@@ -778,11 +987,36 @@
 				</ul>
 			</div>
 			<div class="lg:max-w-[450px]">
-				<img
-					class="h-auto w-full max-w-full"
-					src="./images/home/slider-image.png"
-					alt="slider image"
-				/>
+				<div class="swiper swiper-entertainment-big mt-5 h-full lg:mt-0">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide h-auto!">
+							<a href="#" class="group flex h-full">
+								<img
+									class="h-full w-full max-w-full object-cover transition-transform group-hover:scale-110"
+									src="./images/home/big-slider.webp"
+									alt="slider image"
+								/>
+							</a>
+						</div>
+						<div class="swiper-slide h-auto!">
+							<a href="#" class="group flex h-full">
+								<img
+									class="h-full w-full max-w-full object-cover transition-transform group-hover:scale-110"
+									src="./images/home/big-slider.webp"
+									alt="slider image"
+								/>
+							</a>
+						</div>
+					</div>
+
+					<!-- If we need navigation buttons -->
+					<div
+						class="swiper-button-prev swiper-button-prev-entertainment-big z-10! rounded-full bg-[#e70437] p-3 text-white!"
+					></div>
+					<div
+						class="swiper-button-next swiper-button-next-entertainment-big z-10! rounded-full bg-[#e70437] p-3 text-white!"
+					></div>
+				</div>
 			</div>
 		</div>
 
@@ -1126,6 +1360,2007 @@
 		</div>
 	</div>
 </section>
+
+<!-- India -->
+<section class="py-5">
+	<div class="container max-w-[1152px]">
+		<!-- Page Header -->
+		<div class="flex flex-col overflow-hidden">
+			<div
+				class="flex w-full items-center justify-between gap-3 border-b border-b-gray-200 py-2"
+			>
+				<a href="#" class="flex-1">
+					<h2 class="flex items-center text-xl font-bold text-black">
+						India
+						<svg
+							width="30"
+							height="24"
+							viewBox="0 0 30 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M16 17L21 12L16 7"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M10 17L15 12L10 7"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</h2>
+				</a>
+
+				<!-- Nav Slider -->
+				<div class="hidden items-center min-[1200px]:flex">
+					<div class="swiper swiper-india-nav ml-auto! w-[800px]">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="flex items-center gap-2">
+						<!-- If we need navigation buttons -->
+						<button
+							class="swiper-button-prev-india-nav flex size-5 items-center justify-center rounded-full bg-black/80"
+						>
+							<svg
+								class="size-4"
+								width="10"
+								height="20"
+								viewBox="0 0 10 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M1.53572 9.4073L6.24989 4.69314L7.42822 5.87147L3.30322 9.99647L7.42822 14.1215L6.24989 15.2998L1.53572 10.5856C1.3795 10.4294 1.29173 10.2174 1.29173 9.99647C1.29173 9.7755 1.3795 9.56358 1.53572 9.4073Z"
+									fill="white"
+								/>
+							</svg>
+						</button>
+						<button
+							class="swiper-button-next-india-nav flex size-5 items-center justify-center rounded-full bg-black/80"
+						>
+							<svg
+								class="size-4"
+								width="10"
+								height="20"
+								viewBox="0 0 10 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M8.46428 10.5927L3.75011 15.3069L2.57178 14.1285L6.69678 10.0035L2.57178 5.87853L3.75011 4.7002L8.46428 9.41436C8.6205 9.57064 8.70827 9.78256 8.70827 10.0035C8.70827 10.2245 8.6205 10.4364 8.46428 10.5927Z"
+									fill="white"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div
+				class="relative h-px w-full bg-gray-200 after:absolute after:-top-0.5 after:left-0 after:h-1 after:w-10 after:bg-black"
+			></div>
+
+			<div
+				class="mb-5 flex w-[1200px] items-center gap-5 overflow-auto min-[1200px]:hidden"
+			>
+				<div
+					class="no-scrollbar flex min-w-[1200px] flex-nowrap gap-5 py-3 whitespace-nowrap"
+				>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Content -->
+		<div
+			class="mt-5 grid gap-5 border-b-[5px] border-b-[#f1f1f1] pb-5 lg:grid-cols-2"
+		>
+			<div class="grid gap-5 md:grid-cols-2">
+				<a href="#" class="group flex w-full shrink-0 flex-col gap-3">
+					<div class="overflow-hidden rounded-lg">
+						<img
+							class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+							src="./images/global/image.webp"
+							alt="image"
+						/>
+					</div>
+					<p class="line-clamp-3 text-sm leading-normal">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+						consectetur.
+					</p>
+				</a>
+				<a href="#" class="group hidden w-full shrink-0 flex-col gap-3 lg:flex">
+					<div class="overflow-hidden rounded-lg">
+						<img
+							class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+							src="./images/global/image.webp"
+							alt="image"
+						/>
+					</div>
+					<p class="line-clamp-3 text-sm leading-normal">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+						consectetur.
+					</p>
+				</a>
+				<a href="#" class="group hidden w-full shrink-0 flex-col gap-3 lg:flex">
+					<div class="overflow-hidden rounded-lg">
+						<img
+							class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+							src="./images/global/image.webp"
+							alt="image"
+						/>
+					</div>
+					<p class="line-clamp-3 text-sm leading-normal">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+						consectetur.
+					</p>
+				</a>
+				<a href="#" class="group hidden w-full shrink-0 flex-col gap-3 lg:flex">
+					<div class="overflow-hidden rounded-lg">
+						<img
+							class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+							src="./images/global/image.webp"
+							alt="image"
+						/>
+					</div>
+					<p class="line-clamp-3 text-sm leading-normal">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+						consectetur.
+					</p>
+				</a>
+			</div>
+			<div class="grid gap-4 pb-5 md:grid-cols-2">
+				<ul class="border-b border-dashed border-b-gray-200 lg:max-w-[300px]">
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+				</ul>
+				<ul class="border-b border-dashed border-b-gray-200 lg:max-w-[300px]">
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+					<li
+						class="border-b border-dashed border-b-gray-200 py-3 first:pt-0 last:border-b-0"
+					>
+						<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+							<p class="line-clamp-2">
+								Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+								India’s Rank Surprises
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Tech & Gadgets -->
+<section class="py-5">
+	<div class="container max-w-[1152px]">
+		<!-- Page Header -->
+		<div class="flex flex-col overflow-hidden">
+			<div
+				class="flex w-full items-center justify-between gap-3 border-b border-b-gray-200 py-2"
+			>
+				<a href="#" class="flex-1">
+					<h2 class="flex items-center text-xl font-bold text-black">
+						Tech & Gadgets
+						<svg
+							width="30"
+							height="24"
+							viewBox="0 0 30 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M16 17L21 12L16 7"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M10 17L15 12L10 7"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</h2>
+				</a>
+
+				<!-- Nav Slider -->
+				<div class="hidden items-center min-[1200px]:flex">
+					<div class="swiper swiper-tech-nav ml-auto! w-[800px]">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="flex items-center gap-2">
+						<!-- If we need navigation buttons -->
+						<button
+							class="swiper-button-prev-tech-nav flex size-5 items-center justify-center rounded-full bg-black/80"
+						>
+							<svg
+								class="size-4"
+								width="10"
+								height="20"
+								viewBox="0 0 10 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M1.53572 9.4073L6.24989 4.69314L7.42822 5.87147L3.30322 9.99647L7.42822 14.1215L6.24989 15.2998L1.53572 10.5856C1.3795 10.4294 1.29173 10.2174 1.29173 9.99647C1.29173 9.7755 1.3795 9.56358 1.53572 9.4073Z"
+									fill="white"
+								/>
+							</svg>
+						</button>
+						<button
+							class="swiper-button-next-tech-nav flex size-5 items-center justify-center rounded-full bg-black/80"
+						>
+							<svg
+								class="size-4"
+								width="10"
+								height="20"
+								viewBox="0 0 10 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M8.46428 10.5927L3.75011 15.3069L2.57178 14.1285L6.69678 10.0035L2.57178 5.87853L3.75011 4.7002L8.46428 9.41436C8.6205 9.57064 8.70827 9.78256 8.70827 10.0035C8.70827 10.2245 8.6205 10.4364 8.46428 10.5927Z"
+									fill="white"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div
+				class="relative h-px w-full bg-gray-200 after:absolute after:-top-0.5 after:left-0 after:h-1 after:w-10 after:bg-black"
+			></div>
+
+			<div
+				class="mb-5 flex w-[1200px] items-center gap-5 overflow-auto min-[1200px]:hidden"
+			>
+				<div
+					class="no-scrollbar flex min-w-[1200px] flex-nowrap gap-5 py-3 whitespace-nowrap"
+				>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Content -->
+		<div
+			class="mt-5 flex flex-col gap-5 border-b-[5px] border-b-[#f1f1f1] pb-5 lg:flex-row"
+		>
+			<a
+				href="#"
+				class="with-image-bg flex flex-col pt-[200px] md:pt-0 lg:max-w-[480px]"
+			>
+				<img
+					class="image-bg rounded-md"
+					src="./images/home/tech.webp"
+					alt="slider image"
+				/>
+				<p class="mt-auto p-5 text-lg font-bold text-white">
+					Pine Labs IPO: Check What Latest GMP Suggest About Potential Listing
+				</p>
+			</a>
+			<div class="grid gap-4 pb-5 md:grid-cols-2">
+				<ul
+					class="border-r border-b border-dashed border-r-gray-200 border-b-gray-200 lg:max-w-[300px] lg:pr-5"
+				>
+					<li
+						class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+					<li
+						class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+					<li
+						class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+					<li
+						class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+				</ul>
+				<ul
+					class="border-b border-dashed border-b-gray-200 lg:max-w-[300px] lg:pr-5"
+				>
+					<li
+						class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+					<li
+						class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+					<li
+						class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+					<li
+						class="border-dashed border-b-gray-200 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 py-3 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Business-->
+<section class="py-5">
+	<div class="container max-w-[1152px]">
+		<!-- Page Header -->
+		<div class="flex flex-col overflow-hidden">
+			<div
+				class="flex w-full items-center justify-between gap-3 border-b border-b-gray-200 py-2"
+			>
+				<a href="#" class="flex-1">
+					<h2 class="flex items-center text-xl font-bold text-black">
+						Business
+						<svg
+							width="30"
+							height="24"
+							viewBox="0 0 30 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M16 17L21 12L16 7"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M10 17L15 12L10 7"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</h2>
+				</a>
+
+				<!-- Nav Slider -->
+				<div class="hidden items-center min-[1200px]:flex">
+					<div class="swiper swiper-bussiness-nav ml-auto! w-[800px]">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="text-sm font-medium text-black">
+									Basketball
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="flex items-center gap-2">
+						<!-- If we need navigation buttons -->
+						<button
+							class="swiper-button-prev-bussiness-nav flex size-5 items-center justify-center rounded-full bg-black/80"
+						>
+							<svg
+								class="size-4"
+								width="10"
+								height="20"
+								viewBox="0 0 10 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M1.53572 9.4073L6.24989 4.69314L7.42822 5.87147L3.30322 9.99647L7.42822 14.1215L6.24989 15.2998L1.53572 10.5856C1.3795 10.4294 1.29173 10.2174 1.29173 9.99647C1.29173 9.7755 1.3795 9.56358 1.53572 9.4073Z"
+									fill="white"
+								/>
+							</svg>
+						</button>
+						<button
+							class="swiper-button-next-bussiness-nav flex size-5 items-center justify-center rounded-full bg-black/80"
+						>
+							<svg
+								class="size-4"
+								width="10"
+								height="20"
+								viewBox="0 0 10 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M8.46428 10.5927L3.75011 15.3069L2.57178 14.1285L6.69678 10.0035L2.57178 5.87853L3.75011 4.7002L8.46428 9.41436C8.6205 9.57064 8.70827 9.78256 8.70827 10.0035C8.70827 10.2245 8.6205 10.4364 8.46428 10.5927Z"
+									fill="white"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div
+				class="relative h-px w-full bg-gray-200 after:absolute after:-top-0.5 after:left-0 after:h-1 after:w-10 after:bg-black"
+			></div>
+
+			<div
+				class="mb-5 flex w-[1200px] items-center gap-5 overflow-auto min-[1200px]:hidden"
+			>
+				<div
+					class="no-scrollbar flex min-w-[1200px] flex-nowrap gap-5 py-3 whitespace-nowrap"
+				>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+					<a href="#" class="flex-shrink-0 text-sm font-medium text-black">
+						Basketball
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Content -->
+		<div
+			class="mt-5 flex flex-col gap-5 border-b-[5px] border-b-[#f1f1f1] pb-5 lg:flex-row"
+		>
+			<a
+				href="#"
+				class="with-image-bg flex flex-col pt-[200px] md:pt-0 lg:max-w-[480px]"
+			>
+				<img
+					class="image-bg rounded-md"
+					src="./images/home/tech.webp"
+					alt="slider image"
+				/>
+				<p class="mt-auto p-5 text-lg font-bold text-white">
+					Pine Labs IPO: Check What Latest GMP Suggest About Potential Listing
+				</p>
+			</a>
+			<div class="grid gap-4 pb-5 md:grid-cols-2">
+				<ul
+					class="border-r border-b border-dashed border-r-gray-200 border-b-gray-200 lg:max-w-[300px] lg:pr-5"
+				>
+					<li
+						class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+					<li
+						class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+					<li
+						class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+					<li
+						class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+				</ul>
+				<ul
+					class="border-b border-dashed border-b-gray-200 lg:max-w-[300px] lg:pr-5"
+				>
+					<li
+						class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+					<li
+						class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+					<li
+						class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+					<li
+						class="border-dashed border-b-gray-200 not-last:border-b first:pt-0 last:border-b-0"
+					>
+						<a
+							href="#"
+							class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+						>
+							<div class="order-2 py-3 md:order-1 md:col-span-2">
+								<p class="line-clamp-3">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</div>
+
+							<img
+								class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+								src="./images/home/health-small.webp"
+								alt="small image"
+							/>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Education, Health, World News -->
+<section class="py-5">
+	<div class="container max-w-[1152px]">
+		<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+			<div class="grid">
+				<!-- Page Header -->
+				<div class="flex flex-col">
+					<div class="flex items-center gap-3 border-b border-b-gray-200 py-2">
+						<a href="#">
+							<h2 class="flex items-center text-xl font-bold text-black">
+								Education
+								<svg
+									width="30"
+									height="24"
+									viewBox="0 0 30 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M16 17L21 12L16 7"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+									<path
+										d="M10 17L15 12L10 7"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</h2>
+						</a>
+					</div>
+					<div
+						class="relative h-px w-full bg-gray-200 after:absolute after:-top-0.5 after:left-0 after:h-1 after:w-10 after:bg-black"
+					></div>
+				</div>
+
+				<!-- Content -->
+				<div class="mt-5 flex flex-col gap-5 pb-5">
+					<a href="#" class="group flex w-full shrink-0 flex-col gap-2">
+						<div class="overflow-hidden rounded-lg">
+							<img
+								class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+								src="./images/global/image.webp"
+								alt="image"
+							/>
+						</div>
+						<p class="mt-0 line-clamp-3 text-lg leading-normal font-bold">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+							consectetur.
+						</p>
+					</a>
+					<div class="grid gap-4 pb-5">
+						<ul class="border-b border-dashed border-b-gray-200">
+							<li
+								class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+							>
+								<a
+									href="#"
+									class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+								>
+									<div class="order-2 md:order-1 md:col-span-2">
+										<p class="line-clamp-3">
+											Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+											India’s Rank Surprises
+										</p>
+									</div>
+
+									<img
+										class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+										src="./images/home/health-small.webp"
+										alt="small image"
+									/>
+								</a>
+							</li>
+							<li
+								class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+							>
+								<a
+									href="#"
+									class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+								>
+									<div class="order-2 md:order-1 md:col-span-2">
+										<p class="line-clamp-3">
+											Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+											India’s Rank Surprises
+										</p>
+									</div>
+
+									<img
+										class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+										src="./images/home/health-small.webp"
+										alt="small image"
+									/>
+								</a>
+							</li>
+							<li
+								class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+							>
+								<a
+									href="#"
+									class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+								>
+									<div class="order-2 md:order-1 md:col-span-2">
+										<p class="line-clamp-3">
+											Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+											India’s Rank Surprises
+										</p>
+									</div>
+
+									<img
+										class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+										src="./images/home/health-small.webp"
+										alt="small image"
+									/>
+								</a>
+							</li>
+							<li
+								class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+							>
+								<a
+									href="#"
+									class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+								>
+									<div class="order-2 md:order-1 md:col-span-2">
+										<p class="line-clamp-3">
+											Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+											India’s Rank Surprises
+										</p>
+									</div>
+
+									<img
+										class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+										src="./images/home/health-small.webp"
+										alt="small image"
+									/>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="grid">
+				<!-- Page Header -->
+				<div class="flex flex-col">
+					<div class="flex items-center gap-3 border-b border-b-gray-200 py-2">
+						<a href="#">
+							<h2 class="flex items-center text-xl font-bold text-black">
+								Health
+								<svg
+									width="30"
+									height="24"
+									viewBox="0 0 30 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M16 17L21 12L16 7"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+									<path
+										d="M10 17L15 12L10 7"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</h2>
+						</a>
+					</div>
+					<div
+						class="relative h-px w-full bg-gray-200 after:absolute after:-top-0.5 after:left-0 after:h-1 after:w-10 after:bg-black"
+					></div>
+				</div>
+
+				<!-- Content -->
+				<div class="mt-5 flex flex-col gap-5 pb-5">
+					<a href="#" class="group flex w-full shrink-0 flex-col gap-2">
+						<div class="overflow-hidden rounded-lg">
+							<img
+								class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+								src="./images/global/image.webp"
+								alt="image"
+							/>
+						</div>
+						<p class="mt-0 line-clamp-3 text-lg leading-normal font-bold">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+							consectetur.
+						</p>
+					</a>
+					<div class="grid gap-4 pb-5">
+						<ul class="border-b border-dashed border-b-gray-200">
+							<li
+								class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+							>
+								<a
+									href="#"
+									class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+								>
+									<div class="order-2 md:order-1 md:col-span-2">
+										<p class="line-clamp-3">
+											Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+											India’s Rank Surprises
+										</p>
+									</div>
+
+									<img
+										class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+										src="./images/home/health-small.webp"
+										alt="small image"
+									/>
+								</a>
+							</li>
+							<li
+								class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+							>
+								<a
+									href="#"
+									class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+								>
+									<div class="order-2 md:order-1 md:col-span-2">
+										<p class="line-clamp-3">
+											Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+											India’s Rank Surprises
+										</p>
+									</div>
+
+									<img
+										class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+										src="./images/home/health-small.webp"
+										alt="small image"
+									/>
+								</a>
+							</li>
+							<li
+								class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+							>
+								<a
+									href="#"
+									class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+								>
+									<div class="order-2 md:order-1 md:col-span-2">
+										<p class="line-clamp-3">
+											Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+											India’s Rank Surprises
+										</p>
+									</div>
+
+									<img
+										class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+										src="./images/home/health-small.webp"
+										alt="small image"
+									/>
+								</a>
+							</li>
+							<li
+								class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+							>
+								<a
+									href="#"
+									class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+								>
+									<div class="order-2 md:order-1 md:col-span-2">
+										<p class="line-clamp-3">
+											Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+											India’s Rank Surprises
+										</p>
+									</div>
+
+									<img
+										class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+										src="./images/home/health-small.webp"
+										alt="small image"
+									/>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="grid">
+				<!-- Page Header -->
+				<div class="flex flex-col">
+					<div class="flex items-center gap-3 border-b border-b-gray-200 py-2">
+						<a href="#">
+							<h2 class="flex items-center text-xl font-bold text-black">
+								World News
+								<svg
+									width="30"
+									height="24"
+									viewBox="0 0 30 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M16 17L21 12L16 7"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+									<path
+										d="M10 17L15 12L10 7"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</h2>
+						</a>
+					</div>
+					<div
+						class="relative h-px w-full bg-gray-200 after:absolute after:-top-0.5 after:left-0 after:h-1 after:w-10 after:bg-black"
+					></div>
+				</div>
+
+				<!-- Content -->
+				<div class="mt-5 flex flex-col gap-5 pb-5">
+					<a href="#" class="group flex w-full shrink-0 flex-col gap-2">
+						<div class="overflow-hidden rounded-lg">
+							<img
+								class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+								src="./images/global/image.webp"
+								alt="image"
+							/>
+						</div>
+						<p class="mt-0 line-clamp-3 text-lg leading-normal font-bold">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+							consectetur.
+						</p>
+					</a>
+					<div class="grid gap-4 pb-5">
+						<ul class="border-b border-dashed border-b-gray-200">
+							<li
+								class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+							>
+								<a
+									href="#"
+									class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+								>
+									<div class="order-2 md:order-1 md:col-span-2">
+										<p class="line-clamp-3">
+											Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+											India’s Rank Surprises
+										</p>
+									</div>
+
+									<img
+										class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+										src="./images/home/health-small.webp"
+										alt="small image"
+									/>
+								</a>
+							</li>
+							<li
+								class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+							>
+								<a
+									href="#"
+									class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+								>
+									<div class="order-2 md:order-1 md:col-span-2">
+										<p class="line-clamp-3">
+											Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+											India’s Rank Surprises
+										</p>
+									</div>
+
+									<img
+										class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+										src="./images/home/health-small.webp"
+										alt="small image"
+									/>
+								</a>
+							</li>
+							<li
+								class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+							>
+								<a
+									href="#"
+									class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+								>
+									<div class="order-2 md:order-1 md:col-span-2">
+										<p class="line-clamp-3">
+											Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+											India’s Rank Surprises
+										</p>
+									</div>
+
+									<img
+										class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+										src="./images/home/health-small.webp"
+										alt="small image"
+									/>
+								</a>
+							</li>
+							<li
+								class="border-dashed border-b-gray-200 py-3 not-last:border-b first:pt-0 last:border-b-0"
+							>
+								<a
+									href="#"
+									class="line-clamp-2 grid gap-5 text-sm text-black md:grid-cols-3"
+								>
+									<div class="order-2 md:order-1 md:col-span-2">
+										<p class="line-clamp-3">
+											Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+											India’s Rank Surprises
+										</p>
+									</div>
+
+									<img
+										class="h-full w-full max-w-full rounded-md object-cover md:order-2"
+										src="./images/home/health-small.webp"
+										alt="small image"
+									/>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Auto -->
+<section class="py-5">
+	<div class="container max-w-[1152px]">
+		<!-- Page Header -->
+		<div class="flex flex-col">
+			<div class="flex items-center gap-3 border-b border-b-gray-200 py-2">
+				<a href="#">
+					<h2 class="flex items-center text-xl font-bold text-black">
+						Auto
+						<svg
+							width="30"
+							height="24"
+							viewBox="0 0 30 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M16 17L21 12L16 7"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M10 17L15 12L10 7"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</h2>
+				</a>
+			</div>
+			<div
+				class="relative h-px w-full bg-gray-200 after:absolute after:-top-0.5 after:left-0 after:h-1 after:w-10 after:bg-black"
+			></div>
+		</div>
+
+		<!-- Content -->
+		<div
+			class="mt-5 flex flex-col gap-5 border-b-[5px] border-b-[#f1f1f1] pb-5"
+		>
+			<ul class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+				<li>
+					<a href="#" class="group flex w-full shrink-0 flex-col gap-2">
+						<div class="overflow-hidden rounded-lg">
+							<img
+								class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+								src="./images/global/image.webp"
+								alt="image"
+							/>
+						</div>
+						<p class="mt-0 line-clamp-3 text-lg leading-normal font-bold">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+							consectetur.
+						</p>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="group flex w-full shrink-0 flex-col gap-2">
+						<div class="overflow-hidden rounded-lg">
+							<img
+								class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+								src="./images/global/image.webp"
+								alt="image"
+							/>
+						</div>
+						<p class="mt-0 line-clamp-3 text-lg leading-normal font-bold">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+							consectetur.
+						</p>
+					</a>
+				</li>
+				<li>
+					<ul>
+						<li
+							class="border-b border-dashed border-b-gray-200 py-3 first:pt-0"
+						>
+							<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+								<p class="line-clamp-2">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</a>
+						</li>
+						<li
+							class="border-b border-dashed border-b-gray-200 py-3 first:pt-0"
+						>
+							<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+								<p class="line-clamp-2">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</a>
+						</li>
+						<li
+							class="border-b border-dashed border-b-gray-200 py-3 first:pt-0"
+						>
+							<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+								<p class="line-clamp-2">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</a>
+						</li>
+						<li
+							class="border-b border-dashed border-b-gray-200 py-3 first:pt-0"
+						>
+							<a href="#" class="line-clamp-2 flex flex-col text-sm text-black">
+								<p class="line-clamp-2">
+									Top 10 Alcohol-Drinking Countries in 2025 — Russia Leads,
+									India’s Rank Surprises
+								</p>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<!-- Explainers -->
+<section class="py-5">
+	<div class="container max-w-[1152px]">
+		<!-- Page Header -->
+		<div class="flex flex-col">
+			<div class="flex items-center gap-3 border-b border-b-gray-200 py-2">
+				<a href="#">
+					<h2 class="flex items-center text-xl font-bold text-black">
+						Explainers
+						<svg
+							width="30"
+							height="24"
+							viewBox="0 0 30 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M16 17L21 12L16 7"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M10 17L15 12L10 7"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</h2>
+				</a>
+			</div>
+			<div
+				class="relative h-px w-full bg-gray-200 after:absolute after:-top-0.5 after:left-0 after:h-1 after:w-10 after:bg-black"
+			></div>
+		</div>
+
+		<!-- Content -->
+		<div
+			class="mt-5 grid grid-cols-2 gap-5 border-b-[5px] border-b-[#f1f1f1] pb-5 md:grid-cols-3 lg:grid-cols-4"
+		>
+			<a href="#" class="group flex w-full shrink-0 flex-col gap-3">
+				<div class="overflow-hidden rounded-lg">
+					<img
+						class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+						src="./images/global/image.webp"
+						alt="image"
+					/>
+				</div>
+				<p class="line-clamp-3 text-sm leading-normal">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+					consectetur.
+				</p>
+			</a>
+			<a href="#" class="group flex w-full shrink-0 flex-col gap-3">
+				<div class="overflow-hidden rounded-lg">
+					<img
+						class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+						src="./images/global/image.webp"
+						alt="image"
+					/>
+				</div>
+				<p class="line-clamp-3 text-sm leading-normal">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+					consectetur.
+				</p>
+			</a>
+			<a href="#" class="group flex w-full shrink-0 flex-col gap-3">
+				<div class="overflow-hidden rounded-lg">
+					<img
+						class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+						src="./images/global/image.webp"
+						alt="image"
+					/>
+				</div>
+				<p class="line-clamp-3 text-sm leading-normal">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+					consectetur.
+				</p>
+			</a>
+			<a href="#" class="group flex w-full shrink-0 flex-col gap-3">
+				<div class="overflow-hidden rounded-lg">
+					<img
+						class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+						src="./images/global/image.webp"
+						alt="image"
+					/>
+				</div>
+				<p class="line-clamp-3 text-sm leading-normal">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+					consectetur.
+				</p>
+			</a>
+			<a href="#" class="group flex w-full shrink-0 flex-col gap-3">
+				<div class="overflow-hidden rounded-lg">
+					<img
+						class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+						src="./images/global/image.webp"
+						alt="image"
+					/>
+				</div>
+				<p class="line-clamp-3 text-sm leading-normal">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+					consectetur.
+				</p>
+			</a>
+			<a href="#" class="group flex w-full shrink-0 flex-col gap-3">
+				<div class="overflow-hidden rounded-lg">
+					<img
+						class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+						src="./images/global/image.webp"
+						alt="image"
+					/>
+				</div>
+				<p class="line-clamp-3 text-sm leading-normal">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+					consectetur.
+				</p>
+			</a>
+			<a href="#" class="group flex w-full shrink-0 flex-col gap-3">
+				<div class="overflow-hidden rounded-lg">
+					<img
+						class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+						src="./images/global/image.webp"
+						alt="image"
+					/>
+				</div>
+				<p class="line-clamp-3 text-sm leading-normal">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+					consectetur.
+				</p>
+			</a>
+			<a href="#" class="group flex w-full shrink-0 flex-col gap-3">
+				<div class="overflow-hidden rounded-lg">
+					<img
+						class="flex h-auto w-full max-w-full rounded-lg transition-transform group-hover:scale-110"
+						src="./images/global/image.webp"
+						alt="image"
+					/>
+				</div>
+				<p class="line-clamp-3 text-sm leading-normal">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+					consectetur.
+				</p>
+			</a>
+		</div>
+	</div>
+</section>
+
 <!-- Footer -->
 <footer class="bg-[#141414] p-5">
 	<div class="container">

@@ -4,6 +4,7 @@ function initializeMobileMenu() {
 	const menu = document.querySelector("#mobile-menu")
 	const overlay = document.querySelector("#mobile-menu-overlay")
 	const burger = document.querySelector("#burger")
+	const closeBtn = document.querySelector("#menu-close")
 	const body = document.querySelector("body")
 
 	// Define mobile breakpoint for responsive behavior
@@ -54,6 +55,7 @@ function initializeMobileMenu() {
 	}
 
 	// Add event listeners for main menu
+	closeBtn.addEventListener("click", handleBurgerClick)
 	burger.addEventListener("click", handleBurgerClick)
 	overlay.addEventListener("click", handleOverlayClick)
 	document.addEventListener("keydown", handleEscapeKey)
@@ -99,7 +101,7 @@ function initializeMobileMenu() {
 // Inits
 document.addEventListener("DOMContentLoaded", () => {
 	// Mobile Menu
-	// initializeMobileMenu()
+	initializeMobileMenu()
 })
 
 // Sliders

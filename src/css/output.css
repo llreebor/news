@@ -382,6 +382,9 @@
   .my-2 {
     margin-block: calc(var(--spacing) * 2);
   }
+  .my-4 {
+    margin-block: calc(var(--spacing) * 4);
+  }
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
   }
@@ -606,6 +609,9 @@
   }
   .w-\[80\%\] {
     width: 80%;
+  }
+  .w-\[130px\] {
+    width: 130px;
   }
   .w-\[150px\] {
     width: 150px;
@@ -2171,6 +2177,11 @@
   .max-mobile\:hidden {
     @media (width < 1200px) {
       display: none;
+    }
+  }
+  .min-\[480px\]\:flex-row {
+    @media (width >= 480px) {
+      flex-direction: row;
     }
   }
   .min-\[1200px\]\:flex {

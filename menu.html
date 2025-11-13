@@ -2614,7 +2614,7 @@
 			<div class="container">
 				<div class="flex items-center justify-between gap-3 py-2.5">
 					<div class="flex items-center gap-3">
-						<button>
+						<button id="burger">
 							<img src="./images/icons/burger.svg" alt="burger button" />
 						</button>
 						<a href="#">
@@ -2850,5 +2850,324 @@
 				</nav>
 			</div>
 		</div>
+	</div>
+
+	<!-- Burger Menu -->
+	<div>
+		<div
+			id="mobile-menu"
+			aria-hidden="true"
+			class="fixed top-0 left-0 z-10 mb-10 flex h-full w-full -translate-x-full transform flex-col bg-white transition-transform duration-300 ease-in-out [.is-open]:translate-x-0"
+		>
+			<div
+				class="flex items-center justify-between gap-3 border-b border-b-gray-100 bg-[#f2f2f2] p-4"
+			>
+				<button id="menu-close">
+					<img src="./images/icons/menu_close.svg" alt="menu close" />
+				</button>
+
+				<div>
+					<a
+						href="#"
+						target="_blank"
+						class="flex items-center gap-1 px-2.5 py-2"
+					>
+						<img src="./images/icons/tv-dark.svg" alt="icon" />
+						<p class="pt-1 text-xs font-medium uppercase">LIVE TV</p>
+					</a>
+				</div>
+			</div>
+			<div class="mb-10 flex h-full w-full flex-1 flex-col overflow-auto">
+				<nav
+					class="mb-10 h-full w-full flex-1 grow pb-10"
+					role="navigation"
+					aria-label="Mobile menu"
+				>
+					<ul>
+						<li class="group current">
+							<a
+								href="#"
+								class="relative flex items-center gap-3 bg-white p-4 text-base text-black group-[.current]:bg-[#f2f2f2] group-[.current]:font-bold group-[.current]:shadow-md after:absolute after:left-0 after:h-full after:w-1.5 after:bg-transparent after:transition-colors group-[.current]:after:bg-black"
+							>
+								Home
+							</a>
+						</li>
+						<li class="group">
+							<a
+								href="#"
+								class="relative flex items-center gap-3 bg-white p-4 text-base text-black group-[.current]:bg-[#f2f2f2] group-[.current]:font-bold group-[.current]:shadow-md after:absolute after:left-0 after:h-full after:w-1.5 after:bg-transparent after:transition-colors group-[.current]:after:bg-black"
+							>
+								Latest
+							</a>
+						</li>
+
+						<!-- Mobile Submenu -->
+						<li class="with-submenu group relative">
+							<div class="flex w-full flex-col">
+								<!-- Trigger -->
+								<button
+									class="submenu-trigger relative flex items-center justify-between gap-3 bg-white p-4 text-base text-black group-[.current]:bg-[#f2f2f2] group-[.current]:font-bold group-[.current]:shadow-md after:absolute after:left-0 after:h-full after:w-1.5 after:bg-transparent after:transition-colors group-[.current]:after:bg-black"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									<a href="#asds">Entertainment</a>
+									<svg
+										aria-hidden="true"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										class="transition-transform group-[.active]:rotate-180"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M7 10L12 15L17 10"
+											stroke="#121826"
+											stroke-width="3"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</button>
+
+								<!-- Content -->
+								<div
+									class="submenu-mobile grid grid-rows-[0fr] bg-[#f7f7f7cc] transition-all duration-500 group-[.active]:grid-rows-[1fr]"
+								>
+									<div class="overflow-hidden">
+										<ul class="space-y-2">
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- Mobile Submenu -->
+						<li class="with-submenu group relative">
+							<div class="flex w-full flex-col">
+								<!-- Trigger -->
+								<button
+									class="submenu-trigger relative flex items-center justify-between gap-3 bg-white p-4 text-base text-black group-[.current]:bg-[#f2f2f2] group-[.current]:font-bold group-[.current]:shadow-md after:absolute after:left-0 after:h-full after:w-1.5 after:bg-transparent after:transition-colors group-[.current]:after:bg-black"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									<span>India</span>
+									<svg
+										aria-hidden="true"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										class="transition-transform group-[.active]:rotate-180"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M7 10L12 15L17 10"
+											stroke="#121826"
+											stroke-width="3"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</button>
+
+								<!-- Content -->
+								<div
+									class="submenu-mobile grid grid-rows-[0fr] bg-[#f7f7f7cc] transition-all duration-500 group-[.active]:grid-rows-[1fr]"
+								>
+									<div class="overflow-hidden">
+										<ul class="space-y-2">
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- Mobile Submenu -->
+						<li class="with-submenu group relative">
+							<div class="flex w-full flex-col">
+								<!-- Trigger -->
+								<button
+									class="submenu-trigger relative flex items-center justify-between gap-3 bg-white p-4 text-base text-black group-[.current]:bg-[#f2f2f2] group-[.current]:font-bold group-[.current]:shadow-md after:absolute after:left-0 after:h-full after:w-1.5 after:bg-transparent after:transition-colors group-[.current]:after:bg-black"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									<span>Sports</span>
+									<svg
+										aria-hidden="true"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										class="transition-transform group-[.active]:rotate-180"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M7 10L12 15L17 10"
+											stroke="#121826"
+											stroke-width="3"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</button>
+
+								<!-- Content -->
+								<div
+									class="submenu-mobile grid grid-rows-[0fr] bg-[#f7f7f7cc] transition-all duration-500 group-[.active]:grid-rows-[1fr]"
+								>
+									<div class="overflow-hidden">
+										<ul class="space-y-2">
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- Mobile Submenu -->
+						<li class="with-submenu group relative">
+							<div class="flex w-full flex-col">
+								<!-- Trigger -->
+								<button
+									class="submenu-trigger relative flex items-center justify-between gap-3 bg-white p-4 text-base text-black group-[.current]:bg-[#f2f2f2] group-[.current]:font-bold group-[.current]:shadow-md after:absolute after:left-0 after:h-full after:w-1.5 after:bg-transparent after:transition-colors group-[.current]:after:bg-black"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									<span>Bussiness</span>
+									<svg
+										aria-hidden="true"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										class="transition-transform group-[.active]:rotate-180"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M7 10L12 15L17 10"
+											stroke="#121826"
+											stroke-width="3"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</button>
+
+								<!-- Content -->
+								<div
+									class="submenu-mobile grid grid-rows-[0fr] bg-[#f7f7f7cc] transition-all duration-500 group-[.active]:grid-rows-[1fr]"
+								>
+									<div class="overflow-hidden">
+										<ul class="space-y-2">
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+											<li>
+												<a href="#" class="flex py-4 pl-7 text-base text-black">
+													Settings
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="group">
+							<a
+								href="#"
+								class="relative flex items-center gap-3 bg-white p-4 text-base text-black group-[.current]:bg-[#f2f2f2] group-[.current]:font-bold group-[.current]:shadow-md after:absolute after:left-0 after:h-full after:w-1.5 after:bg-transparent after:transition-colors group-[.current]:after:bg-black"
+							>
+								Home
+							</a>
+						</li>
+						<li class="group">
+							<a
+								href="#"
+								class="relative flex items-center gap-3 bg-white p-4 text-base text-black group-[.current]:bg-[#f2f2f2] group-[.current]:font-bold group-[.current]:shadow-md after:absolute after:left-0 after:h-full after:w-1.5 after:bg-transparent after:transition-colors group-[.current]:after:bg-black"
+							>
+								Latest
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Overlay -->
+		<div
+			id="mobile-menu-overlay"
+			aria-hidden="true"
+			role="presentation"
+			class="pointer-events-none fixed inset-0 z-0 bg-black/80 opacity-0 transition-opacity duration-300 ease-in-out"
+		></div>
 	</div>
 </header>

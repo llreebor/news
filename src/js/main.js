@@ -262,3 +262,25 @@ new Swiper(".swiper-bussiness-nav", {
 		prevEl: ".swiper-button-prev-bussiness-nav",
 	},
 })
+
+// Article Latest News
+new Swiper(".swiper-article-lates-news", {
+	loop: true,
+	spaceBetween: 20,
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next-article-lates-news",
+		prevEl: ".swiper-button-prev-article-lates-news",
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1.2,
+		},
+		640: {
+			slidesPerView: 2,
+		},
+		992: {
+			slidesPerView: 3,
+		},
+	},
+})

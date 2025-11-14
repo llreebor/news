@@ -38,7 +38,7 @@
 
 /* Container max-width & paddings */
 @utility container {
-	@apply mx-auto max-w-(--container-max-width) px-(--container-side-padding);
+	@apply mx-auto max-w-(--container-max-width) px-(--container-side-padding) min-[1200px]:px-0;
 }
 
 /* Base Elements  */

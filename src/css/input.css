@@ -84,3 +84,19 @@
 @utility no-scrollbar {
 	@apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
 }
+
+/* Swiper */
+.swiper-lifestyle-big .swiper-slide {
+	opacity: 0.5;
+	transition: 0.3s opa--value();
+}
+.swiper-lifestyle-big .swiper-slide-active {
+	opacity: 1;
+}
+.swiper-entertainment-big .swiper-slide {
+	opacity: 0.5;
+	transition: 0.3s opa--value();
+}
+.swiper-entertainment-big .swiper-slide-active {
+	opacity: 1;
+}

@@ -136,6 +136,7 @@ new Swiper(".swiper-lifestyle-big", {
 		nextEl: ".swiper-button-next-lifestyle-big",
 		prevEl: ".swiper-button-prev-lifestyle-big",
 	},
+	slidesPerView: 1.5,
 })
 
 // Photos
@@ -228,6 +229,7 @@ new Swiper(".swiper-entertainment-big", {
 		nextEl: ".swiper-button-next-entertainment-big",
 		prevEl: ".swiper-button-prev-entertainment-big",
 	},
+	slidesPerView: 1.5,
 })
 
 // India

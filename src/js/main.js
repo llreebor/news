@@ -97,11 +97,36 @@ function initializeMobileMenu() {
 		}
 	})
 }
+function initMobileDropdown() {
+	const trigger = document.getElementById("dropdown-trigger")
+	const content = document.getElementById("dropdown-content")
+	const arrow = document.querySelector(".dropdown-arrow")
+
+	if (!trigger || !content || !arrow) {
+		console.warn("Dropdown elements not found")
+		return
+	}
+
+	trigger.addEventListener("click", function (event) {
+		event.stopPropagation()
+		arrow.classList.toggle("rotate-90")
+		content.classList.toggle("hidden")
+	})
+
+	// Закрываем дропдаун при клике вне его
+	document.addEventListener("click", function (event) {
+		if (!trigger.contains(event.target)) {
+			content.classList.add("hidden")
+			arrow.classList.remove("rotate-90")
+		}
+	})
+}
 
 // Inits
 document.addEventListener("DOMContentLoaded", () => {
 	// Mobile Menu
 	initializeMobileMenu()
+	initMobileDropdown()
 })
 
 // Sliders
